@@ -15,7 +15,6 @@
 		E044479B1AF9C84F0004E07A /* Innovation_PoCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E044479A1AF9C84F0004E07A /* Innovation_PoCTests.swift */; };
 		E04447AE1AF9C85C0004E07A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04447AD1AF9C85C0004E07A /* InterfaceController.swift */; };
 		E04447B01AF9C85C0004E07A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04447AF1AF9C85C0004E07A /* NotificationController.swift */; };
-		E04447B21AF9C85C0004E07A /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04447B11AF9C85C0004E07A /* GlanceController.swift */; };
 		E04447B41AF9C85C0004E07A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E04447B31AF9C85C0004E07A /* Images.xcassets */; };
 		E04447B81AF9C85C0004E07A /* Innovation PoC WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = E04447B71AF9C85C0004E07A /* Innovation PoC WatchKit App.app */; };
 		E04447C01AF9C85D0004E07A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04447BE1AF9C85D0004E07A /* Interface.storyboard */; };
@@ -25,6 +24,18 @@
 		E04447D01AFA00770004E07A /* ComponentCompositionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04447CF1AFA00770004E07A /* ComponentCompositionController.swift */; };
 		E04447D21AFA059A0004E07A /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04447D11AFA059A0004E07A /* MapController.swift */; };
 		E0BF195E1AFB03420081CEEB /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BF195D1AFB03420081CEEB /* AnimationController.swift */; };
+		F0D1AD791AFB4E60001CBEDD /* CoinKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D1AD781AFB4E60001CBEDD /* CoinKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0D1AD7F1AFB4E60001CBEDD /* CoinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D1AD741AFB4E60001CBEDD /* CoinKit.framework */; };
+		F0D1AD881AFB4E60001CBEDD /* CoinKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1AD871AFB4E60001CBEDD /* CoinKitTests.swift */; };
+		F0D1AD8B1AFB4E60001CBEDD /* CoinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D1AD741AFB4E60001CBEDD /* CoinKit.framework */; };
+		F0D1AD8C1AFB4E60001CBEDD /* CoinKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0D1AD741AFB4E60001CBEDD /* CoinKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F0D1AD941AFB4EAC001CBEDD /* CoinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D1AD741AFB4E60001CBEDD /* CoinKit.framework */; };
+		F0D1AD951AFB4EAC001CBEDD /* CoinKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0D1AD741AFB4E60001CBEDD /* CoinKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F0D1AD9A1AFB4F26001CBEDD /* Coins.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1AD991AFB4F26001CBEDD /* Coins.swift */; };
+		F0D1ADA01AFB4F77001CBEDD /* CoinDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1AD9C1AFB4F77001CBEDD /* CoinDetailInterfaceController.swift */; };
+		F0D1ADA11AFB4F77001CBEDD /* CoinGlanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1AD9D1AFB4F77001CBEDD /* CoinGlanceInterfaceController.swift */; };
+		F0D1ADA21AFB4F77001CBEDD /* CoinRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1AD9E1AFB4F77001CBEDD /* CoinRow.swift */; };
+		F0D1ADA31AFB4F77001CBEDD /* CoinsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1AD9F1AFB4F77001CBEDD /* CoinsInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +60,34 @@
 			remoteGlobalIDString = E04447A71AF9C85B0004E07A;
 			remoteInfo = "Innovation PoC WatchKit Extension";
 		};
+		F0D1AD801AFB4E60001CBEDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E04447771AF9C84F0004E07A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0D1AD731AFB4E60001CBEDD;
+			remoteInfo = CoinKit;
+		};
+		F0D1AD821AFB4E60001CBEDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E04447771AF9C84F0004E07A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E044477E1AF9C84F0004E07A;
+			remoteInfo = "Innovation PoC";
+		};
+		F0D1AD891AFB4E60001CBEDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E04447771AF9C84F0004E07A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0D1AD731AFB4E60001CBEDD;
+			remoteInfo = CoinKit;
+		};
+		F0D1AD961AFB4EAC001CBEDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E04447771AF9C84F0004E07A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0D1AD731AFB4E60001CBEDD;
+			remoteInfo = CoinKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +100,28 @@
 				E04447C51AF9C85D0004E07A /* Innovation PoC WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D1AD921AFB4E60001CBEDD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F0D1AD8C1AFB4E60001CBEDD /* CoinKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D1AD981AFB4EAC001CBEDD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F0D1AD951AFB4EAC001CBEDD /* CoinKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -81,7 +142,6 @@
 		E04447AC1AF9C85C0004E07A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		E04447AD1AF9C85C0004E07A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		E04447AF1AF9C85C0004E07A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		E04447B11AF9C85C0004E07A /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		E04447B31AF9C85C0004E07A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E04447B71AF9C85C0004E07A /* Innovation PoC WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Innovation PoC WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04447BD1AF9C85D0004E07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +151,17 @@
 		E04447CF1AFA00770004E07A /* ComponentCompositionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentCompositionController.swift; sourceTree = "<group>"; };
 		E04447D11AFA059A0004E07A /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		E0BF195D1AFB03420081CEEB /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
+		F0D1AD741AFB4E60001CBEDD /* CoinKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoinKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D1AD771AFB4E60001CBEDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0D1AD781AFB4E60001CBEDD /* CoinKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinKit.h; sourceTree = "<group>"; };
+		F0D1AD7E1AFB4E60001CBEDD /* CoinKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D1AD861AFB4E60001CBEDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0D1AD871AFB4E60001CBEDD /* CoinKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinKitTests.swift; sourceTree = "<group>"; };
+		F0D1AD991AFB4F26001CBEDD /* Coins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coins.swift; sourceTree = "<group>"; };
+		F0D1AD9C1AFB4F77001CBEDD /* CoinDetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinDetailInterfaceController.swift; path = Coins/CoinDetailInterfaceController.swift; sourceTree = "<group>"; };
+		F0D1AD9D1AFB4F77001CBEDD /* CoinGlanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinGlanceInterfaceController.swift; path = Coins/CoinGlanceInterfaceController.swift; sourceTree = "<group>"; };
+		F0D1AD9E1AFB4F77001CBEDD /* CoinRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinRow.swift; path = Coins/CoinRow.swift; sourceTree = "<group>"; };
+		F0D1AD9F1AFB4F77001CBEDD /* CoinsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinsInterfaceController.swift; path = Coins/CoinsInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D1AD8B1AFB4E60001CBEDD /* CoinKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +184,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D1AD941AFB4EAC001CBEDD /* CoinKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D1AD701AFB4E60001CBEDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D1AD7B1AFB4E60001CBEDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D1AD7F1AFB4E60001CBEDD /* CoinKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +213,8 @@
 				E04447971AF9C84F0004E07A /* Innovation PoCTests */,
 				E04447A91AF9C85B0004E07A /* Innovation PoC WatchKit Extension */,
 				E04447BB1AF9C85C0004E07A /* Innovation PoC WatchKit App */,
+				F0D1AD751AFB4E60001CBEDD /* CoinKit */,
+				F0D1AD841AFB4E60001CBEDD /* CoinKitTests */,
 				E04447801AF9C84F0004E07A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,6 +226,8 @@
 				E04447941AF9C84F0004E07A /* Innovation PoCTests.xctest */,
 				E04447A81AF9C85B0004E07A /* Innovation PoC WatchKit Extension.appex */,
 				E04447B71AF9C85C0004E07A /* Innovation PoC WatchKit App.app */,
+				F0D1AD741AFB4E60001CBEDD /* CoinKit.framework */,
+				F0D1AD7E1AFB4E60001CBEDD /* CoinKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,9 +273,9 @@
 		E04447A91AF9C85B0004E07A /* Innovation PoC WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F0D1AD9B1AFB4F68001CBEDD /* Coins */,
 				E04447AD1AF9C85C0004E07A /* InterfaceController.swift */,
 				E04447AF1AF9C85C0004E07A /* NotificationController.swift */,
-				E04447B11AF9C85C0004E07A /* GlanceController.swift */,
 				E04447B31AF9C85C0004E07A /* Images.xcassets */,
 				E04447AA1AF9C85C0004E07A /* Supporting Files */,
 				E04447CD1AF9F6870004E07A /* TapTouchDragController.swift */,
@@ -221,7 +313,64 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F0D1AD751AFB4E60001CBEDD /* CoinKit */ = {
+			isa = PBXGroup;
+			children = (
+				F0D1AD991AFB4F26001CBEDD /* Coins.swift */,
+				F0D1AD781AFB4E60001CBEDD /* CoinKit.h */,
+				F0D1AD761AFB4E60001CBEDD /* Supporting Files */,
+			);
+			path = CoinKit;
+			sourceTree = "<group>";
+		};
+		F0D1AD761AFB4E60001CBEDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0D1AD771AFB4E60001CBEDD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0D1AD841AFB4E60001CBEDD /* CoinKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0D1AD871AFB4E60001CBEDD /* CoinKitTests.swift */,
+				F0D1AD851AFB4E60001CBEDD /* Supporting Files */,
+			);
+			path = CoinKitTests;
+			sourceTree = "<group>";
+		};
+		F0D1AD851AFB4E60001CBEDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0D1AD861AFB4E60001CBEDD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0D1AD9B1AFB4F68001CBEDD /* Coins */ = {
+			isa = PBXGroup;
+			children = (
+				F0D1AD9C1AFB4F77001CBEDD /* CoinDetailInterfaceController.swift */,
+				F0D1AD9D1AFB4F77001CBEDD /* CoinGlanceInterfaceController.swift */,
+				F0D1AD9E1AFB4F77001CBEDD /* CoinRow.swift */,
+				F0D1AD9F1AFB4F77001CBEDD /* CoinsInterfaceController.swift */,
+			);
+			name = Coins;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F0D1AD711AFB4E60001CBEDD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D1AD791AFB4E60001CBEDD /* CoinKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		E044477E1AF9C84F0004E07A /* Innovation PoC */ = {
@@ -232,11 +381,13 @@
 				E044477C1AF9C84F0004E07A /* Frameworks */,
 				E044477D1AF9C84F0004E07A /* Resources */,
 				E04447CC1AF9C85D0004E07A /* Embed App Extensions */,
+				F0D1AD921AFB4E60001CBEDD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				E04447C41AF9C85D0004E07A /* PBXTargetDependency */,
+				F0D1AD8A1AFB4E60001CBEDD /* PBXTargetDependency */,
 			);
 			name = "Innovation PoC";
 			productName = "Innovation PoC";
@@ -268,11 +419,13 @@
 				E04447A41AF9C85B0004E07A /* Sources */,
 				E04447A51AF9C85B0004E07A /* Frameworks */,
 				E04447A61AF9C85B0004E07A /* Resources */,
+				F0D1AD981AFB4EAC001CBEDD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				E04447BA1AF9C85C0004E07A /* PBXTargetDependency */,
+				F0D1AD971AFB4EAC001CBEDD /* PBXTargetDependency */,
 			);
 			name = "Innovation PoC WatchKit Extension";
 			productName = "Innovation PoC WatchKit Extension";
@@ -293,6 +446,43 @@
 			productName = "Innovation PoC WatchKit App";
 			productReference = E04447B71AF9C85C0004E07A /* Innovation PoC WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp";
+		};
+		F0D1AD731AFB4E60001CBEDD /* CoinKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0D1AD911AFB4E60001CBEDD /* Build configuration list for PBXNativeTarget "CoinKit" */;
+			buildPhases = (
+				F0D1AD6F1AFB4E60001CBEDD /* Sources */,
+				F0D1AD701AFB4E60001CBEDD /* Frameworks */,
+				F0D1AD711AFB4E60001CBEDD /* Headers */,
+				F0D1AD721AFB4E60001CBEDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinKit;
+			productName = CoinKit;
+			productReference = F0D1AD741AFB4E60001CBEDD /* CoinKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F0D1AD7D1AFB4E60001CBEDD /* CoinKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0D1AD931AFB4E60001CBEDD /* Build configuration list for PBXNativeTarget "CoinKitTests" */;
+			buildPhases = (
+				F0D1AD7A1AFB4E60001CBEDD /* Sources */,
+				F0D1AD7B1AFB4E60001CBEDD /* Frameworks */,
+				F0D1AD7C1AFB4E60001CBEDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0D1AD811AFB4E60001CBEDD /* PBXTargetDependency */,
+				F0D1AD831AFB4E60001CBEDD /* PBXTargetDependency */,
+			);
+			name = CoinKitTests;
+			productName = CoinKitTests;
+			productReference = F0D1AD7E1AFB4E60001CBEDD /* CoinKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -316,6 +506,13 @@
 					E04447B61AF9C85C0004E07A = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
+					F0D1AD731AFB4E60001CBEDD = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					F0D1AD7D1AFB4E60001CBEDD = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = E044477E1AF9C84F0004E07A;
+					};
 				};
 			};
 			buildConfigurationList = E044477A1AF9C84F0004E07A /* Build configuration list for PBXProject "Innovation PoC" */;
@@ -335,6 +532,8 @@
 				E04447931AF9C84F0004E07A /* Innovation PoCTests */,
 				E04447A71AF9C85B0004E07A /* Innovation PoC WatchKit Extension */,
 				E04447B61AF9C85C0004E07A /* Innovation PoC WatchKit App */,
+				F0D1AD731AFB4E60001CBEDD /* CoinKit */,
+				F0D1AD7D1AFB4E60001CBEDD /* CoinKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -375,6 +574,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F0D1AD721AFB4E60001CBEDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D1AD7C1AFB4E60001CBEDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -402,10 +615,29 @@
 				E04447B01AF9C85C0004E07A /* NotificationController.swift in Sources */,
 				E04447CE1AF9F6870004E07A /* TapTouchDragController.swift in Sources */,
 				E04447D01AFA00770004E07A /* ComponentCompositionController.swift in Sources */,
+				F0D1ADA21AFB4F77001CBEDD /* CoinRow.swift in Sources */,
 				E04447AE1AF9C85C0004E07A /* InterfaceController.swift in Sources */,
 				E0BF195E1AFB03420081CEEB /* AnimationController.swift in Sources */,
+				F0D1ADA11AFB4F77001CBEDD /* CoinGlanceInterfaceController.swift in Sources */,
 				E04447D21AFA059A0004E07A /* MapController.swift in Sources */,
-				E04447B21AF9C85C0004E07A /* GlanceController.swift in Sources */,
+				F0D1ADA31AFB4F77001CBEDD /* CoinsInterfaceController.swift in Sources */,
+				F0D1ADA01AFB4F77001CBEDD /* CoinDetailInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D1AD6F1AFB4E60001CBEDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D1AD9A1AFB4F26001CBEDD /* Coins.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D1AD7A1AFB4E60001CBEDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D1AD881AFB4E60001CBEDD /* CoinKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +658,26 @@
 			isa = PBXTargetDependency;
 			target = E04447A71AF9C85B0004E07A /* Innovation PoC WatchKit Extension */;
 			targetProxy = E04447C31AF9C85D0004E07A /* PBXContainerItemProxy */;
+		};
+		F0D1AD811AFB4E60001CBEDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0D1AD731AFB4E60001CBEDD /* CoinKit */;
+			targetProxy = F0D1AD801AFB4E60001CBEDD /* PBXContainerItemProxy */;
+		};
+		F0D1AD831AFB4E60001CBEDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E044477E1AF9C84F0004E07A /* Innovation PoC */;
+			targetProxy = F0D1AD821AFB4E60001CBEDD /* PBXContainerItemProxy */;
+		};
+		F0D1AD8A1AFB4E60001CBEDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0D1AD731AFB4E60001CBEDD /* CoinKit */;
+			targetProxy = F0D1AD891AFB4E60001CBEDD /* PBXContainerItemProxy */;
+		};
+		F0D1AD971AFB4EAC001CBEDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0D1AD731AFB4E60001CBEDD /* CoinKit */;
+			targetProxy = F0D1AD961AFB4EAC001CBEDD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -648,6 +900,80 @@
 			};
 			name = Release;
 		};
+		F0D1AD8D1AFB4E60001CBEDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoinKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F0D1AD8E1AFB4E60001CBEDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CoinKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F0D1AD8F1AFB4E60001CBEDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoinKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Innovation PoC.app/Innovation PoC";
+			};
+			name = Debug;
+		};
+		F0D1AD901AFB4E60001CBEDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoinKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Innovation PoC.app/Innovation PoC";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -692,6 +1018,24 @@
 			buildConfigurations = (
 				E04447CA1AF9C85D0004E07A /* Debug */,
 				E04447CB1AF9C85D0004E07A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0D1AD911AFB4E60001CBEDD /* Build configuration list for PBXNativeTarget "CoinKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0D1AD8D1AFB4E60001CBEDD /* Debug */,
+				F0D1AD8E1AFB4E60001CBEDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0D1AD931AFB4E60001CBEDD /* Build configuration list for PBXNativeTarget "CoinKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0D1AD8F1AFB4E60001CBEDD /* Debug */,
+				F0D1AD901AFB4E60001CBEDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

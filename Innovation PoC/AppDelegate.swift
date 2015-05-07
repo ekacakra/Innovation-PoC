@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoinKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -40,7 +41,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+        // Check for the request key and its value, just to be sure it’s really the watch app calling.
+        if let userInfo = userInfo, request = userInfo["request"] as? String {
+            if request == "refreshData" {
+                // Instantiate CoinHelper to perform the network request. Note that you’re calling the synchronous version of the fetch request; if you performed a background fetch instead, the method would return right away and the reply would always be empty, which would be of no use to you.
+                let coinHelper = CoinHelper()
+                let coins = coinHelper.requestPriceSynchronous()
+                
+                // After the request comes back, you call the reply handler. coins is an array of Coin objects, so you need to archive the array into an NSData instance so it survives the trip back to WatchKit.
+                reply(["coinData": NSKeyedArchiver.archivedDataWithRootObject(coins)])
+                
+                return
+            }
+        }
+        
+        // If something goes wrong, the default action is to send back an empty dictionary.
+        reply([:])
+    }
+    
 }
-

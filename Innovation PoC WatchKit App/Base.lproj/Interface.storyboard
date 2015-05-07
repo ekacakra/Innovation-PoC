@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
@@ -208,7 +208,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="490" y="1163"/>
+            <point key="canvasLocation" x="-14" y="675"/>
         </scene>
         <!--Animation Controller-->
         <scene sceneID="xcq-Ls-fYw">
@@ -250,27 +250,126 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="742" y="992"/>
+            <point key="canvasLocation" x="-14" y="1010.5"/>
         </scene>
-        <!--Get Data-->
+        <!--CoinDetailInterfaceController-->
+        <scene sceneID="hqO-PC-raP">
+            <objects>
+                <controller identifier="CoinDetailInterfaceController" id="Djx-fM-YWU" customClass="CoinDetailInterfaceController" customModule="Innovation_PoC_WatchKit_Extension">
+                    <items>
+                        <group alignment="left" id="fSe-Fx-7uL">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" id="n11-5x-XrM"/>
+                                <label alignment="right" text="Coin" textAlignment="center" id="xAF-t7-f75">
+                                    <fontDescription key="font" type="boldSystem" pointSize="34"/>
+                                </label>
+                            </items>
+                        </group>
+                        <table alignment="left" id="VLG-AC-r0Z">
+                            <items>
+                                <tableRow identifier="CoinRow" id="gCq-Ti-dno" customClass="CoinRow" customModule="Innovation_PoC_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="bnW-uS-FNl">
+                                        <items>
+                                            <label alignment="right" text="Name" textAlignment="center" minimumScaleFactor="0.69999999999999996" id="O1I-8Y-7vZ">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <label alignment="right" text="Price" textAlignment="center" minimumScaleFactor="0.5" id="tAU-Wt-26N"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="detailLable" destination="tAU-Wt-26N" id="LZp-kC-BB9"/>
+                                        <outlet property="titleLable" destination="O1I-8Y-7vZ" id="4Cg-QE-b4j"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <switch width="1" alignment="left" verticalAlignment="bottom" title="Favorite" id="94S-2G-Kwt">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                            <connections>
+                                <action selector="favoriteSwitchValueChanged:" destination="Djx-fM-YWU" id="cjE-EC-Oab"/>
+                            </connections>
+                        </switch>
+                    </items>
+                    <connections>
+                        <outlet property="coinImage" destination="n11-5x-XrM" id="kfy-iD-RPI"/>
+                        <outlet property="favoriteSwitch" destination="94S-2G-Kwt" id="a59-A4-eha"/>
+                        <outlet property="nameLabel" destination="xAF-t7-f75" id="gnY-pT-wMH"/>
+                        <outlet property="table" destination="VLG-AC-r0Z" id="Ij7-4i-Asu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="942"/>
+        </scene>
+        <!--Coins-->
         <scene sceneID="MnM-IF-T9p">
             <objects>
-                <controller title="Get Data" id="WUY-EW-RCc"/>
+                <controller title="Coins" id="WUY-EW-RCc" customClass="CoinsInterfaceController" customModule="Innovation_PoC_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="4ah-zF-cFL">
+                            <items>
+                                <tableRow identifier="CoinRow" id="lWb-AS-2KS" customClass="CoinRow" customModule="Innovation_PoC_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="SVj-fn-6vN">
+                                        <items>
+                                            <label alignment="left" text="Coin Name" textAlignment="center" id="kiq-9d-tJT">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <label alignment="left" verticalAlignment="bottom" text="Price" textAlignment="center" id="Lhf-oA-WL4"/>
+                                        </items>
+                                        <connections>
+                                            <segue destination="Djx-fM-YWU" kind="push" identifier="CoinDetails" id="PsM-U0-XiT"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="detailLable" destination="Lhf-oA-WL4" id="0NZ-dx-Tig"/>
+                                        <outlet property="titleLable" destination="kiq-9d-tJT" id="lwD-Eh-JCW"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="coinTable" destination="4ah-zF-cFL" id="Ivt-Hz-Io8"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="490" y="913"/>
+            <point key="canvasLocation" x="235" y="675"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="Innovation_PoC_WatchKit_App" customModuleProvider="target">
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="CoinGlanceInterfaceController" customModule="Innovation_PoC_WatchKit_Extension">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y"/>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" id="2Lo-Uk-SRi"/>
+                                <label alignment="left" text="Coin" textAlignment="center" id="DXA-rN-VUN">
+                                    <fontDescription key="font" type="boldSystem" pointSize="34"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="4" right="0.0" top="4" bottom="0.0"/>
+                        </group>
+                        <group alignment="left" id="uCw-4Q-Ouw">
+                            <items>
+                                <group alignment="center" verticalAlignment="center" layout="vertical" id="dhD-tB-1f8">
+                                    <items>
+                                        <label alignment="right" text="0.00" textAlignment="center" id="mOk-O7-jeU">
+                                            <fontDescription key="font" type="boldSystem" pointSize="38"/>
+                                        </label>
+                                        <label alignment="right" verticalAlignment="bottom" text="USD" textAlignment="center" id="89Y-fT-uGq"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="coinImage" destination="2Lo-Uk-SRi" id="aKY-O6-BKP"/>
+                        <outlet property="nameLabel" destination="DXA-rN-VUN" id="gvy-KD-zAe"/>
+                        <outlet property="priceLabel" destination="mOk-O7-jeU" id="Pf1-JM-8fg"/>
+                    </connections>
                 </glanceController>
             </objects>
-            <point key="canvasLocation" x="235" y="1069"/>
+            <point key="canvasLocation" x="-14" y="1394"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -286,14 +385,14 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="235" y="1365"/>
+            <point key="canvasLocation" x="-14" y="1711"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
                 <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="Innovation_PoC_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="490" y="1365"/>
+            <point key="canvasLocation" x="272" y="1711"/>
         </scene>
     </scenes>
 </document>
