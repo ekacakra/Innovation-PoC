@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Innovation_PoC_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="left" text="Innovation PoC" textAlignment="center" id="Y9a-PA-yKc"/>
+                        <separator alignment="left" id="4Lx-P6-dzk"/>
+                        <button width="1" alignment="left" title="Tap, Touch and Drag" id="yCw-Jv-4Dl">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <segue destination="9jM-uM-FXD" kind="push" id="oko-ix-My1"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Screen Transition" id="3DJ-Qz-A2n">
+                            <connections>
+                                <segue destination="Vnn-a1-ymw" kind="push" id="qOT-La-3pM"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Component Composition" id="Het-XY-H0B">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                            <connections>
+                                <segue destination="I8c-jo-ycy" kind="push" id="Hex-Rq-La5"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Retrieving Data" id="DsU-33-RaY">
+                            <connections>
+                                <segue destination="WUY-EW-RCc" kind="push" id="Vrh-az-pwp"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Multimedia and Animation" id="Zr2-Bw-wP6">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                            <connections>
+                                <segue destination="eA1-Ia-jdy" kind="push" id="eZ0-5x-17G"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="307"/>
+        </scene>
+        <!--ST Test-->
+        <scene sceneID="3Pq-pU-sSn">
+            <objects>
+                <controller title="ST Test" id="Vnn-a1-ymw" customClass="ScreenTransition"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="75"/>
+        </scene>
+        <!--TTD Test-->
+        <scene sceneID="wYm-1X-Tdt">
+            <objects>
+                <controller identifier="TapTouchDragController" title="TTD Test" id="9jM-uM-FXD" customClass="TapTouchDragController" customModule="Innovation_PoC_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Tap, Touch and Drag" textAlignment="center" numberOfLines="2" id="dzi-FV-iXz"/>
+                        <separator alignment="left" id="q6G-nX-CuZ"/>
+                        <group width="1" alignment="left" id="cuM-i6-9CA">
+                            <items>
+                                <label alignment="left" text="Status:" textAlignment="left" id="zcB-ha-zCc"/>
+                                <label alignment="left" textAlignment="left" id="Vmh-WF-TyD"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Tap It" id="M4Q-ZA-e6t">
+                            <connections>
+                                <action selector="tapAction" destination="9jM-uM-FXD" id="8XU-41-qpA"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="statusLabel" destination="Vmh-WF-TyD" id="GHF-xE-Yph"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="490" y="-158"/>
+        </scene>
+        <!--CC Test-->
+        <scene sceneID="XPC-8c-wmb">
+            <objects>
+                <controller title="CC Test" id="I8c-jo-ycy" customClass="ComponentComposition" customModule="Innovation_PoC_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Component Composition" textAlignment="center" numberOfLines="2" id="gM1-ww-qM3"/>
+                        <separator alignment="left" id="kOs-nD-Cv9"/>
+                        <label alignment="left" text="Left" id="Mh4-1s-0ta"/>
+                        <label alignment="center" text="Center" id="u3y-zW-heE"/>
+                        <label alignment="right" text="Right" id="eP5-S5-qoA"/>
+                        <group width="1" alignment="left" id="e0h-9T-dsm">
+                            <items>
+                                <label alignment="left" text="Label" id="A2t-nS-Naa"/>
+                                <label alignment="left" text="Label" id="EVv-Tm-mv3"/>
+                                <label alignment="left" text="Label" id="X2c-xl-Ete"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Mfj-YG-eN7">
+                            <items>
+                                <group alignment="left" layout="vertical" id="G29-c7-h0V">
+                                    <items>
+                                        <imageView width="65" alignment="left" id="qWY-0Q-bbB"/>
+                                        <label alignment="left" text="Label" id="hMs-3W-Eqa"/>
+                                    </items>
+                                </group>
+                                <imageView height="62" alignment="left" id="wn0-yP-GOi"/>
+                            </items>
+                        </group>
+                        <dateLabel alignment="left" id="iNd-oA-SLD">
+                            <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" none="YES" short="YES"/>
+                        </dateLabel>
+                        <timer alignment="left" id="jQP-JC-gAE"/>
+                        <table alignment="left" id="cKH-2S-QFn">
+                            <items>
+                                <tableRow identifier="tablerow" id="3Te-GF-0LN">
+                                    <group key="rootItem" width="1" alignment="left" id="Csh-kp-804">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Row No: 1" id="QXf-Av-pCK"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Show Map" id="p1n-0n-GPj">
+                            <connections>
+                                <segue destination="68t-pE-Vhv" kind="push" id="jyP-i0-bgh"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="490" y="480"/>
+        </scene>
+        <!--Map Controller-->
+        <scene sceneID="p5a-na-FP8">
+            <objects>
+                <controller id="68t-pE-Vhv" customClass="MapController" customModule="Innovation_PoC_WatchKit_Extension">
+                    <items>
+                        <map width="1" height="1" alignment="left" id="8co-Cw-zxo"/>
+                    </items>
+                    <connections>
+                        <outlet property="map" destination="8co-Cw-zxo" id="NTR-B8-924"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="794" y="480"/>
+        </scene>
+        <!--MaA Test-->
+        <scene sceneID="qyH-bR-M0L">
+            <objects>
+                <controller title="MaA Test" id="eA1-Ia-jdy">
+                    <items>
+                        <label width="1" alignment="left" text="Multimedia &amp; Animation" textAlignment="center" numberOfLines="2" id="7ya-8H-1TH"/>
+                        <separator alignment="left" id="GFZ-qE-Cfg"/>
+                        <button width="1" alignment="left" title="Multimedia" id="biw-zE-94z"/>
+                        <button width="1" alignment="left" title="Animation Image" id="GeS-MM-NgV">
+                            <connections>
+                                <segue destination="hQg-HF-GZl" kind="push" id="zUj-IL-nKz"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="490" y="1163"/>
+        </scene>
+        <!--Animation Controller-->
+        <scene sceneID="xcq-Ls-fYw">
+            <objects>
+                <controller id="hQg-HF-GZl" customClass="AnimationController" customModule="Innovation_PoC_WatchKit_Extension">
+                    <items>
+                        <imageView alignment="left" image="number1" id="7xF-dK-KKc"/>
+                        <group width="1" alignment="left" layout="vertical" id="ScN-jO-pOc">
+                            <items>
+                                <separator alignment="left" id="qOL-Gw-pKh"/>
+                                <slider width="1" alignment="left" value="1" maximum="5" steps="5" id="3VE-0r-1AI">
+                                    <connections>
+                                        <action selector="speedChange:" destination="hQg-HF-GZl" id="jTW-BU-DFv"/>
+                                    </connections>
+                                </slider>
+                                <group width="1" alignment="left" id="GFf-CG-wNB">
+                                    <items>
+                                        <label alignment="left" text="Speed: " textAlignment="center" id="MxT-b9-MIu"/>
+                                        <label alignment="left" text="Label" id="GNy-ol-xSx"/>
+                                    </items>
+                                </group>
+                                <button width="1" alignment="left" title="Apply" id="aYr-Kx-nN6">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="applyCustomSpeed" destination="hQg-HF-GZl" id="c5M-uL-izv"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Stop Animation" id="My4-qg-z52">
+                            <connections>
+                                <action selector="stopAnimating" destination="hQg-HF-GZl" id="fWs-yE-gQn"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="imageAnimation" destination="7xF-dK-KKc" id="zkF-6s-io0"/>
+                        <outlet property="speedLabel" destination="GNy-ol-xSx" id="JgE-N7-5K2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="742" y="992"/>
+        </scene>
+        <!--Get Data-->
+        <scene sceneID="MnM-IF-T9p">
+            <objects>
+                <controller title="Get Data" id="WUY-EW-RCc"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="913"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="Innovation_PoC_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y"/>
+                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1069"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1365"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="Innovation_PoC_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="1365"/>
+        </scene>
+    </scenes>
+</document>

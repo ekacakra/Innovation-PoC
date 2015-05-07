@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0630"
+   version = "2.0">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E04447B61AF9C85C0004E07A"
+               BuildableName = "Innovation PoC WatchKit App.app"
+               BlueprintName = "Innovation PoC WatchKit App"
+               ReferencedContainer = "container:Innovation PoC.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E04447A71AF9C85B0004E07A"
+               BuildableName = "Innovation PoC WatchKit Extension.appex"
+               BlueprintName = "Innovation PoC WatchKit Extension"
+               ReferencedContainer = "container:Innovation PoC.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E044477E1AF9C84F0004E07A"
+               BuildableName = "Innovation PoC.app"
+               BlueprintName = "Innovation PoC"
+               ReferencedContainer = "container:Innovation PoC.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E04447B61AF9C85C0004E07A"
+            BuildableName = "Innovation PoC WatchKit App.app"
+            BlueprintName = "Innovation PoC WatchKit App"
+            ReferencedContainer = "container:Innovation PoC.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES"
+      launchAutomaticallySubstyle = "8"
+      notificationPayloadFile = "Innovation PoC WatchKit Extension/PushNotificationPayload.apns">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/Innovation PoC">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E04447B61AF9C85C0004E07A"
+            BuildableName = "Innovation PoC WatchKit App.app"
+            BlueprintName = "Innovation PoC WatchKit App"
+            ReferencedContainer = "container:Innovation PoC.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E04447B61AF9C85C0004E07A"
+            BuildableName = "Innovation PoC WatchKit App.app"
+            BlueprintName = "Innovation PoC WatchKit App"
+            ReferencedContainer = "container:Innovation PoC.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES"
+      launchAutomaticallySubstyle = "8"
+      notificationPayloadFile = "Innovation PoC WatchKit Extension/PushNotificationPayload.apns">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/Innovation PoC">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E04447B61AF9C85C0004E07A"
+            BuildableName = "Innovation PoC WatchKit App.app"
+            BlueprintName = "Innovation PoC WatchKit App"
+            ReferencedContainer = "container:Innovation PoC.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E04447B61AF9C85C0004E07A"
+            BuildableName = "Innovation PoC WatchKit App.app"
+            BlueprintName = "Innovation PoC WatchKit App"
+            ReferencedContainer = "container:Innovation PoC.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
