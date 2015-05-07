@@ -17,8 +17,8 @@ class AnimationController : WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        speed = 1024
-        speedLabel.setText("1 fps")
+        speed = (speedObject[1]["speed"] as? Double)!
+        speedLabel.setText((speedObject[1]["label"] as? String)!)
         startAnimating()
     }
     
