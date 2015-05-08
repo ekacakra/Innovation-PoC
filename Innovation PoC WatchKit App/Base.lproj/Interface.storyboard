@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
@@ -48,7 +48,7 @@
         <!--ST Test-->
         <scene sceneID="3Pq-pU-sSn">
             <objects>
-                <controller identifier="ScreenTransition" title="ST Test" id="Vnn-a1-ymw">
+                <controller identifier="ScreenTransition" title="ST Test" id="Vnn-a1-ymw" customClass="ScreenTransitionController" customModule="Innovation_PoC_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Screen Transition" id="GQj-sw-iRS"/>
                         <separator alignment="left" id="eCC-yZ-UCC"/>
@@ -59,7 +59,7 @@
                         </button>
                         <button width="1" alignment="left" title="Modal" id="tQC-lp-VNd">
                             <connections>
-                                <segue destination="F3a-jq-Xwe" kind="modal" id="D71-RU-oAQ"/>
+                                <action selector="modalButtonAction" destination="Vnn-a1-ymw" id="pxM-tG-q9c"/>
                             </connections>
                         </button>
                     </items>
@@ -104,30 +104,21 @@
             </objects>
             <point key="canvasLocation" x="739" y="-72"/>
         </scene>
-        <!--Modal Screen Controller-->
+        <!--x-->
         <scene sceneID="8TW-02-UTY">
             <objects>
-                <controller id="F3a-jq-Xwe" customClass="ModalScreenController" customModule="Innovation_PoC_WatchKit_Extension">
+                <controller identifier="ModalScreenController" title="x" id="F3a-jq-Xwe" customClass="ModalScreenController" customModule="Innovation_PoC_WatchKit_Extension">
                     <items>
-                        <imageView alignment="center" verticalAlignment="center" image="appleWatchKit-1" id="Ywf-MK-3rH"/>
+                        <imageView alignment="center" verticalAlignment="center" id="Ywf-MK-3rH"/>
+                        <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="3tz-C8-6rZ"/>
                     </items>
                     <connections>
-                        <segue destination="ZCg-AH-R4o" kind="relationship" relationship="nextPage" id="Qho-XH-5fA"/>
+                        <outlet property="image" destination="Ywf-MK-3rH" id="hJD-fd-gmr"/>
+                        <outlet property="label" destination="3tz-C8-6rZ" id="cA1-nc-g7y"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="742" y="166"/>
-        </scene>
-        <!--Modal Screen Controller-->
-        <scene sceneID="aW1-cF-28p">
-            <objects>
-                <controller id="ZCg-AH-R4o" customClass="ModalScreenController" customModule="Innovation_PoC_WatchKit_Extension">
-                    <items>
-                        <imageView alignment="center" verticalAlignment="center" image="appleWatchKit-2" id="Hnk-WK-8Hf"/>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="912" y="166"/>
         </scene>
         <!--CC Test-->
         <scene sceneID="XPC-8c-wmb">

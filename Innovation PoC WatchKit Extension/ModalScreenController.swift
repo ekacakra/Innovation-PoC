@@ -10,12 +10,27 @@ import Foundation
 import WatchKit
 
 class ModalScreenController: WKInterfaceController {
+    @IBOutlet weak var image: WKInterfaceImage!
+    @IBOutlet weak var label: WKInterfaceLabel!
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
-        self.setTitle("x")
+        if let contextDict = context as? NSDictionary {
+            let type = contextDict["type"] as! String
+            let value = contextDict["value"] as! String
+            if type == "image" {
+                label.setHidden(true)
+                image.setHidden(false)
+                image.setImageNamed(value)
+            } else {
+                label.setHidden(false)
+                image.setHidden(true)
+                label.setText("Page \(value)")
+            }
+            
+        }
     }
     
     override func willActivate() {

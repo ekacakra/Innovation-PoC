@@ -36,6 +36,7 @@
 		F0D1ADA11AFB4F77001CBEDD /* CoinGlanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1AD9D1AFB4F77001CBEDD /* CoinGlanceInterfaceController.swift */; };
 		F0D1ADA21AFB4F77001CBEDD /* CoinRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1AD9E1AFB4F77001CBEDD /* CoinRow.swift */; };
 		F0D1ADA31AFB4F77001CBEDD /* CoinsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1AD9F1AFB4F77001CBEDD /* CoinsInterfaceController.swift */; };
+		F0DE5A761AFCBF6800D464C9 /* ScreenTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE5A751AFCBF6800D464C9 /* ScreenTransitionController.swift */; };
 		F0E42D791AFB755D00AF15BA /* ModalScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E42D781AFB755D00AF15BA /* ModalScreenController.swift */; };
 /* End PBXBuildFile section */
 
@@ -163,6 +164,7 @@
 		F0D1AD9D1AFB4F77001CBEDD /* CoinGlanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinGlanceInterfaceController.swift; path = Coins/CoinGlanceInterfaceController.swift; sourceTree = "<group>"; };
 		F0D1AD9E1AFB4F77001CBEDD /* CoinRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinRow.swift; path = Coins/CoinRow.swift; sourceTree = "<group>"; };
 		F0D1AD9F1AFB4F77001CBEDD /* CoinsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinsInterfaceController.swift; path = Coins/CoinsInterfaceController.swift; sourceTree = "<group>"; };
+		F0DE5A751AFCBF6800D464C9 /* ScreenTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTransitionController.swift; sourceTree = "<group>"; };
 		F0E42D781AFB755D00AF15BA /* ModalScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalScreenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -285,6 +287,7 @@
 				E04447D11AFA059A0004E07A /* MapController.swift */,
 				E0BF195D1AFB03420081CEEB /* AnimationController.swift */,
 				F0E42D781AFB755D00AF15BA /* ModalScreenController.swift */,
+				F0DE5A751AFCBF6800D464C9 /* ScreenTransitionController.swift */,
 			);
 			path = "Innovation PoC WatchKit Extension";
 			sourceTree = "<group>";
@@ -623,6 +626,7 @@
 				E0BF195E1AFB03420081CEEB /* AnimationController.swift in Sources */,
 				F0E42D791AFB755D00AF15BA /* ModalScreenController.swift in Sources */,
 				F0D1ADA11AFB4F77001CBEDD /* CoinGlanceInterfaceController.swift in Sources */,
+				F0DE5A761AFCBF6800D464C9 /* ScreenTransitionController.swift in Sources */,
 				E04447D21AFA059A0004E07A /* MapController.swift in Sources */,
 				F0D1ADA31AFB4F77001CBEDD /* CoinsInterfaceController.swift in Sources */,
 				F0D1ADA01AFB4F77001CBEDD /* CoinDetailInterfaceController.swift in Sources */,
