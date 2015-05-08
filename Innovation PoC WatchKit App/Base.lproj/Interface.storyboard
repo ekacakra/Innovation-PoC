@@ -65,7 +65,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="490" y="75"/>
+            <point key="canvasLocation" x="490" y="125"/>
         </scene>
         <!--TTD Test-->
         <scene sceneID="wYm-1X-Tdt">
@@ -85,7 +85,20 @@
                                 <action selector="tapAction" destination="9jM-uM-FXD" id="8XU-41-qpA"/>
                             </connections>
                         </button>
+                        <label alignment="center" text="Click-and-hold on this controller, in the iOS Simulator, to perform a Force Touch gesture and display a menu." textAlignment="center" numberOfLines="7" id="qcu-6N-FT3"/>
                     </items>
+                    <menu key="menu" id="Vgw-mZ-Hkx">
+                        <items>
+                            <menuItem title="Accept" icon="accept" id="yrw-7O-i6b">
+                                <connections>
+                                    <action selector="menuIconTapped" destination="9jM-uM-FXD" id="nms-vQ-Oi2"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Decline" icon="decline" id="huI-mz-gtn"/>
+                            <menuItem title="Mute" icon="mute" id="lSs-Si-MOJ"/>
+                            <menuItem title="DRK" image="DRK" id="x79-Ra-mFp"/>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="statusLabel" destination="Vmh-WF-TyD" id="GHF-xE-Yph"/>
                     </connections>

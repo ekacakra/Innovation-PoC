@@ -31,4 +31,8 @@ class TapTouchDragController: WKInterfaceController {
     @IBAction func tapAction() {
         statusLabel.setText("Tapping!")
     }
+    
+    @IBAction func menuIconTapped() {
+        println("Menu Item Tapped")
+    }
 }
