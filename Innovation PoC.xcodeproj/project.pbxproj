@@ -24,6 +24,7 @@
 		E04447D01AFA00770004E07A /* ComponentCompositionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04447CF1AFA00770004E07A /* ComponentCompositionController.swift */; };
 		E04447D21AFA059A0004E07A /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04447D11AFA059A0004E07A /* MapController.swift */; };
 		E0BF195E1AFB03420081CEEB /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BF195D1AFB03420081CEEB /* AnimationController.swift */; };
+		E0DBD7801B006A2E00147A5B /* LocationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DBD77F1B006A2E00147A5B /* LocationTableCell.swift */; };
 		F0D1AD791AFB4E60001CBEDD /* CoinKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D1AD781AFB4E60001CBEDD /* CoinKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0D1AD7F1AFB4E60001CBEDD /* CoinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D1AD741AFB4E60001CBEDD /* CoinKit.framework */; };
 		F0D1AD881AFB4E60001CBEDD /* CoinKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1AD871AFB4E60001CBEDD /* CoinKitTests.swift */; };
@@ -153,6 +154,7 @@
 		E04447CF1AFA00770004E07A /* ComponentCompositionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentCompositionController.swift; sourceTree = "<group>"; };
 		E04447D11AFA059A0004E07A /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		E0BF195D1AFB03420081CEEB /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
+		E0DBD77F1B006A2E00147A5B /* LocationTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableCell.swift; sourceTree = "<group>"; };
 		F0D1AD741AFB4E60001CBEDD /* CoinKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoinKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D1AD771AFB4E60001CBEDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0D1AD781AFB4E60001CBEDD /* CoinKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinKit.h; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				E044478B1AF9C84F0004E07A /* Images.xcassets */,
 				E044478D1AF9C84F0004E07A /* LaunchScreen.xib */,
 				E04447821AF9C84F0004E07A /* Supporting Files */,
+				E0DBD77F1B006A2E00147A5B /* LocationTableCell.swift */,
 			);
 			path = "Innovation PoC";
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 			files = (
 				E04447871AF9C84F0004E07A /* ViewController.swift in Sources */,
 				E04447851AF9C84F0004E07A /* AppDelegate.swift in Sources */,
+				E0DBD7801B006A2E00147A5B /* LocationTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

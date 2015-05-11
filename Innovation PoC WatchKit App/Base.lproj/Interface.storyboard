@@ -203,14 +203,26 @@
             <objects>
                 <controller id="68t-pE-Vhv" customClass="MapController" customModule="Innovation_PoC_WatchKit_Extension">
                     <items>
-                        <map width="1" height="1" alignment="left" id="8co-Cw-zxo"/>
+                        <label width="1" alignment="left" text="Zoom" textAlignment="center" id="vQE-IQ-3Jh"/>
+                        <group width="1" height="44" alignment="left" id="Skj-PD-9bC">
+                            <items>
+                                <button width="64" alignment="center" verticalAlignment="center" title="+" id="USP-Dx-mwo">
+                                    <color key="backgroundColor" red="0.1145707352" green="0.2916401018" blue="0.50380273320000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="64" alignment="center" verticalAlignment="center" title="-" id="jjB-b9-rKU">
+                                    <color key="backgroundColor" red="0.1145707352" green="0.2916401018" blue="0.50380273320000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" red="0.61568627450000002" green="0.61568627450000002" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <map height="150" alignment="left" id="8co-Cw-zxo"/>
                     </items>
                     <connections>
                         <outlet property="map" destination="8co-Cw-zxo" id="NTR-B8-924"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="741" y="651"/>
+            <point key="canvasLocation" x="741" y="647.5"/>
         </scene>
         <!--MaA Test-->
         <scene sceneID="qyH-bR-M0L">

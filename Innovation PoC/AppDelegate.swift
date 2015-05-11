@@ -54,6 +54,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 reply(["coinData": NSKeyedArchiver.archivedDataWithRootObject(coins)])
                 
                 return
+            } else if request == "map" {
+                var tmpDelegate : AppDelegate = (UIApplication.sharedApplication().delegate as? AppDelegate)!
+                var vc : ViewController = ((tmpDelegate.window!.rootViewController as? UINavigationController)?.visibleViewController as? ViewController)!
+                var replyObject = vc.getCurrentLocation()
+                reply(replyObject)
+                return
             }
         }
         

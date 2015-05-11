@@ -11,18 +11,28 @@ import WatchKit
 
 class MapController : WKInterfaceController {
     @IBOutlet weak var map: WKInterfaceMap!
-    
+    var currentSpan = MKCoordinateSpanMake(1.0, 1.0);
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        setupMap()
+        WKInterfaceController.openParentApplication(["request":"map"]) { (replyInfo, error) -> Void in
+            var latitudeReply: Double = (replyInfo["latitude"] as! NSString).doubleValue
+            var longitudeReply: Double = (replyInfo["longitude"] as! NSString).doubleValue
+            let location = CLLocationCoordinate2D(
+                latitude: latitudeReply,
+                longitude: longitudeReply)
+            self.setupMap(location)
+        }
+        
     }
     
-    func setupMap() {
-        let location = CLLocationCoordinate2D(
-            latitude: 51.505248,
-            longitude: -0.113838)
+    func setupMap(location: CLLocationCoordinate2D) {
+        let region = MKCoordinateRegion(center: location, span: self.currentSpan)
+        var newCenterPoint = MKMapPointForCoordinate(location);
         
-        let region = MKCoordinateRegion(center: location, span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
+        var mapRect = MKMapRectMake(newCenterPoint.x, newCenterPoint.y, self.currentSpan.latitudeDelta, self.currentSpan.longitudeDelta)
+        
+        self.map.addAnnotation(location, withPinColor: WKInterfaceMapPinColor.Green)
+        self.map.setVisibleMapRect(mapRect)
         self.map.setRegion(region)
     }
 }
