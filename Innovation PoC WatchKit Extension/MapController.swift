@@ -12,6 +12,8 @@ import WatchKit
 class MapController : WKInterfaceController {
     @IBOutlet weak var map: WKInterfaceMap!
     var currentSpan = MKCoordinateSpanMake(1.0, 1.0);
+    var region: MKCoordinateRegion!
+    var currentLocation: CLLocationCoordinate2D!
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         WKInterfaceController.openParentApplication(["request":"map"]) { (replyInfo, error) -> Void in
@@ -20,13 +22,14 @@ class MapController : WKInterfaceController {
             let location = CLLocationCoordinate2D(
                 latitude: latitudeReply,
                 longitude: longitudeReply)
+            self.currentLocation = location
             self.setupMap(location)
         }
         
     }
     
     func setupMap(location: CLLocationCoordinate2D) {
-        let region = MKCoordinateRegion(center: location, span: self.currentSpan)
+        self.region = MKCoordinateRegion(center: location, span: self.currentSpan)
         var newCenterPoint = MKMapPointForCoordinate(location);
         
         var mapRect = MKMapRectMake(newCenterPoint.x, newCenterPoint.y, self.currentSpan.latitudeDelta, self.currentSpan.longitudeDelta)
@@ -34,5 +37,29 @@ class MapController : WKInterfaceController {
         self.map.addAnnotation(location, withPinColor: WKInterfaceMapPinColor.Green)
         self.map.setVisibleMapRect(mapRect)
         self.map.setRegion(region)
+    }
+    
+    @IBAction func zoomIn() {
+        var span: MKCoordinateSpan = MKCoordinateSpanMake(self.currentSpan.latitudeDelta * 0.5, self.currentSpan.longitudeDelta * 0.5);
+        var region: MKCoordinateRegion = MKCoordinateRegionMake(self.region.center, span);
+        
+        self.currentSpan = span;
+        self.map.setRegion(region);
+    }
+    
+    @IBAction func zoomOut() {
+        var span: MKCoordinateSpan = MKCoordinateSpanMake(self.currentSpan.latitudeDelta * 2, self.currentSpan.longitudeDelta * 2);
+        var region: MKCoordinateRegion = MKCoordinateRegionMake(self.region.center, span);
+        
+        self.currentSpan = span;
+        self.map.setRegion(region);
+    }
+    
+    @IBAction func showPin(value: Bool) {
+        if value {
+            self.map.addAnnotation(currentLocation, withPinColor: WKInterfaceMapPinColor.Green)
+        } else {
+            self.map.removeAllAnnotations()
+        }
     }
 }
