@@ -25,6 +25,7 @@
 		E04447D21AFA059A0004E07A /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04447D11AFA059A0004E07A /* MapController.swift */; };
 		E0BF195E1AFB03420081CEEB /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BF195D1AFB03420081CEEB /* AnimationController.swift */; };
 		E0DBD7801B006A2E00147A5B /* LocationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DBD77F1B006A2E00147A5B /* LocationTableCell.swift */; };
+		F0A64EDE1B00B97C00EDABF4 /* PushDynamicNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = F0A64EDD1B00B97C00EDABF4 /* PushDynamicNotificationPayload.apns */; };
 		F0D1AD791AFB4E60001CBEDD /* CoinKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D1AD781AFB4E60001CBEDD /* CoinKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0D1AD7F1AFB4E60001CBEDD /* CoinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D1AD741AFB4E60001CBEDD /* CoinKit.framework */; };
 		F0D1AD881AFB4E60001CBEDD /* CoinKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1AD871AFB4E60001CBEDD /* CoinKitTests.swift */; };
@@ -155,6 +156,7 @@
 		E04447D11AFA059A0004E07A /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		E0BF195D1AFB03420081CEEB /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 		E0DBD77F1B006A2E00147A5B /* LocationTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableCell.swift; sourceTree = "<group>"; };
+		F0A64EDD1B00B97C00EDABF4 /* PushDynamicNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PushDynamicNotificationPayload.apns; sourceTree = "<group>"; };
 		F0D1AD741AFB4E60001CBEDD /* CoinKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoinKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D1AD771AFB4E60001CBEDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0D1AD781AFB4E60001CBEDD /* CoinKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinKit.h; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 		E04447AA1AF9C85C0004E07A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F0A64EDD1B00B97C00EDABF4 /* PushDynamicNotificationPayload.apns */,
 				E04447AB1AF9C85C0004E07A /* Info.plist */,
 				E04447AC1AF9C85C0004E07A /* PushNotificationPayload.apns */,
 			);
@@ -570,6 +573,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E04447B41AF9C85C0004E07A /* Images.xcassets in Resources */,
+				F0A64EDE1B00B97C00EDABF4 /* PushDynamicNotificationPayload.apns in Resources */,
 				E04447B81AF9C85C0004E07A /* Innovation PoC WatchKit App.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
@@ -433,9 +433,50 @@
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="Innovation_PoC_WatchKit_App" customModuleProvider="target"/>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="Innovation_PoC_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="left" text="Invitation" textAlignment="center" id="Fk1-Sg-MT9"/>
+                        <group width="1" alignment="left" id="API-Mf-cXP">
+                            <items>
+                                <label alignment="left" text="Date   :" id="s52-hj-vRY"/>
+                                <label alignment="right" text="&lt;date&gt;" id="34G-fT-XPJ"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="SU4-nL-foQ">
+                            <items>
+                                <label alignment="left" text="Day     :" id="xdX-xz-sNA"/>
+                                <label alignment="right" text="&lt;day&gt;" id="3Ue-gG-xq4"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="vBU-uM-ILA">
+                            <items>
+                                <label width="57" alignment="left" text="Time   :" id="cle-u3-iA3"/>
+                                <label alignment="right" text="&lt;time&gt;" minimumScaleFactor="0.5" id="myq-0t-BSC">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Tzg-26-Ryl">
+                            <items>
+                                <label alignment="left" text="Place  :" id="7rb-sk-OEU"/>
+                                <label alignment="right" text="&lt;place&gt;" numberOfLines="3" id="Ofv-Kb-Xof">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Notes :" id="nnV-pV-OqV"/>
+                        <label width="1" alignment="left" text="&lt;message&gt;" textAlignment="center" numberOfLines="3" minimumScaleFactor="0.99999999999999989" id="Bxc-iA-qQj"/>
+                    </items>
+                    <connections>
+                        <outlet property="dateText" destination="34G-fT-XPJ" id="fP1-IR-YFi"/>
+                        <outlet property="dayText" destination="3Ue-gG-xq4" id="5Jd-l7-U1K"/>
+                        <outlet property="message" destination="Bxc-iA-qQj" id="ZHg-Lf-0Pv"/>
+                        <outlet property="placeText" destination="Ofv-Kb-Xof" id="ch2-HK-Jt4"/>
+                        <outlet property="timeText" destination="myq-0t-BSC" id="Jap-dB-i1J"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="272" y="1711"/>
+            <point key="canvasLocation" x="272" y="1710.5"/>
         </scene>
     </scenes>
 </document>

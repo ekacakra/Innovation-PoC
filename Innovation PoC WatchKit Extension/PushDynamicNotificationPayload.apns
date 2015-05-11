@@ -1,16 +1,17 @@
 {
     "aps": {
-        "alert": {
-            "body": "Static Message",
-            "title": "Optional title"
-        },
+        "date": "May 11 2015",
+        "day": "Tuesday",
+        "time": "8pm to 8.30 pm",
+        "place": "VC Room",
+        "note": "POC | Daily Scrum",
         "category": "myCategory"
     },
     
     "WatchKit Simulator Actions": [
         {
-            "title": "First Button",
-            "identifier": "firstButtonAction"
+            "title": "Attend",
+            "identifier": "attendButtonAction"
         }
     ],
     
