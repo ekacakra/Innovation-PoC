@@ -300,9 +300,9 @@
 		E04447AA1AF9C85C0004E07A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E04447AC1AF9C85C0004E07A /* PushNotificationPayload.apns */,
 				F0A64EDD1B00B97C00EDABF4 /* PushDynamicNotificationPayload.apns */,
 				E04447AB1AF9C85C0004E07A /* Info.plist */,
-				E04447AC1AF9C85C0004E07A /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

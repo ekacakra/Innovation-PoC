@@ -1,7 +1,7 @@
 {
     "aps": {
         "alert": {
-            "body": "Static Message",
+            "body": "Static Notification Message",
             "title": "Optional title"
         },
         "category": "myCategory"
