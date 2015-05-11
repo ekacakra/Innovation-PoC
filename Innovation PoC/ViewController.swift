@@ -18,6 +18,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var locationData: [[String:String]] = []
     var currentLocationLatitude: Double = 0.0
     var currentLocationLongitude: Double = 0.0
+    var reply: (([NSObject : AnyObject]!) -> Void)!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +26,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let userDefaults = NSUserDefaults.standardUserDefaults()
         if (userDefaults.arrayForKey("location") != nil) {
             locationData = (userDefaults.arrayForKey("location") as? [[String:String]])!
+            var latitude: String = self.locationData[0]["latitude"]!
+            var longitude: String = self.locationData[0]["longitude"]!
+            self.setCurrentLocation(latitudeValue: latitude, longitudeValue: longitude)
+        } else {
+            var defaultLatitude = String(format:"%f", currentLocationLatitude)
+            var defaultLongitude = String(format:"%f", currentLocationLongitude)
+            self.setCurrentLocation(latitudeValue: defaultLatitude, longitudeValue: defaultLongitude)
         }
-        currentLatitude.text = String(format:"%f", currentLocationLatitude)
-        currentLongitude.text = String(format:"%f", currentLocationLongitude)
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,18 +57,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         var latitude: String = self.locationData[indexPath.row]["latitude"]!
         var longitude: String = self.locationData[indexPath.row]["longitude"]!
-        currentLocationLatitude = (latitude as NSString).doubleValue
-        currentLocationLongitude = (longitude as NSString).doubleValue
-        currentLatitude.text = latitude
-        currentLongitude.text = longitude
+        self.setCurrentLocation(latitudeValue: latitude, longitudeValue: longitude)
+        self.reply(["latitude":latitude, "longitude":longitude])
     }
     @IBAction func applyLocation(sender: AnyObject) {
         var latitude: String = latitudeTextField.text!
         var longitude: String = longitudeTextField.text!
-        currentLocationLatitude = (latitude as NSString).doubleValue
-        currentLocationLongitude = (longitude as NSString).doubleValue
-        currentLatitude.text = latitude
-        currentLongitude.text = longitude
+        self.setCurrentLocation(latitudeValue: latitude, longitudeValue: longitude)
     }
     
     @IBAction func saveLocation(sender: AnyObject) {
@@ -88,6 +89,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var currentLocationObject: [String:String] = ["latitude":latitude, "longitude":longitude]
         return currentLocationObject
     }
-
+    
+    func setCurrentLocation(latitudeValue latitude: String, longitudeValue longitude: String) {
+        currentLocationLatitude = (latitude as NSString).doubleValue
+        currentLocationLongitude = (longitude as NSString).doubleValue
+        currentLatitude.text = latitude
+        currentLongitude.text = longitude
+    }
+    
+    func setCallback(reply: (([NSObject : AnyObject]!) -> Void)!){
+        self.reply = reply
+    }
 }
 

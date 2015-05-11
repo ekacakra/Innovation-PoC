@@ -58,6 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 var tmpDelegate : AppDelegate = (UIApplication.sharedApplication().delegate as? AppDelegate)!
                 var vc : ViewController = ((tmpDelegate.window!.rootViewController as? UINavigationController)?.visibleViewController as? ViewController)!
                 var replyObject = vc.getCurrentLocation()
+                vc.setCallback(reply)
                 reply(replyObject)
                 return
             }

@@ -22,6 +22,8 @@ class MapController : WKInterfaceController {
             let location = CLLocationCoordinate2D(
                 latitude: latitudeReply,
                 longitude: longitudeReply)
+            println(latitudeReply)
+            println(longitudeReply)
             self.currentLocation = location
             self.setupMap(location)
         }
