@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
@@ -204,24 +204,34 @@
                 <controller id="68t-pE-Vhv" customClass="MapController" customModule="Innovation_PoC_WatchKit_Extension">
                     <items>
                         <map height="150" alignment="left" id="8co-Cw-zxo"/>
-                        <label width="1" alignment="left" text="Zoom" textAlignment="center" id="vQE-IQ-3Jh"/>
-                        <group width="1" height="44" alignment="left" id="Skj-PD-9bC">
+                        <group width="1" height="71" alignment="left" layout="vertical" id="Skj-PD-9bC">
                             <items>
-                                <button width="64" alignment="center" verticalAlignment="center" title="+" id="USP-Dx-mwo">
-                                    <color key="backgroundColor" red="0.1145707352" green="0.2916401018" blue="0.50380273320000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <connections>
-                                        <action selector="zoomIn" destination="68t-pE-Vhv" id="g27-84-NHv"/>
-                                    </connections>
-                                </button>
-                                <button width="64" alignment="center" verticalAlignment="center" title="-" id="jjB-b9-rKU">
-                                    <color key="backgroundColor" red="0.1145707352" green="0.2916401018" blue="0.50380273320000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <connections>
-                                        <action selector="zoomOut" destination="68t-pE-Vhv" id="LuK-Sg-HuB"/>
-                                    </connections>
-                                </button>
+                                <label width="1" alignment="left" text="Zoom" textAlignment="center" id="vQE-IQ-3Jh"/>
+                                <group width="1" alignment="left" id="YQf-6q-id1">
+                                    <items>
+                                        <button width="64" alignment="center" verticalAlignment="center" title="+" id="USP-Dx-mwo">
+                                            <color key="backgroundColor" red="0.1145707352" green="0.2916401018" blue="0.50380273320000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="zoomIn" destination="68t-pE-Vhv" id="g27-84-NHv"/>
+                                            </connections>
+                                        </button>
+                                        <button width="64" alignment="center" verticalAlignment="center" title="-" id="jjB-b9-rKU">
+                                            <color key="backgroundColor" red="0.1145707352" green="0.2916401018" blue="0.50380273320000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="zoomOut" destination="68t-pE-Vhv" id="LuK-Sg-HuB"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
                             </items>
                             <color key="backgroundColor" red="0.61568627450000002" green="0.61568627450000002" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
                         </group>
+                        <button width="1" alignment="center" title="Refresh" id="aIk-Kx-6oS">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="refreshMap" destination="68t-pE-Vhv" id="fhX-Q6-aRE"/>
+                            </connections>
+                        </button>
                         <switch width="1" alignment="left" value="YES" title="Show Pin" id="zKG-1c-mAj">
                             <connections>
                                 <action selector="showPin:" destination="68t-pE-Vhv" id="X8N-3E-5Yg"/>
@@ -233,7 +243,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="741" y="647.5"/>
+            <point key="canvasLocation" x="741" y="657.5"/>
         </scene>
         <!--MaA Test-->
         <scene sceneID="qyH-bR-M0L">

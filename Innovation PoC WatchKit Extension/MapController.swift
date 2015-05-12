@@ -11,23 +11,24 @@ import WatchKit
 
 class MapController : WKInterfaceController {
     @IBOutlet weak var map: WKInterfaceMap!
-    var currentSpan = MKCoordinateSpanMake(1.0, 1.0);
+    var currentSpan = MKCoordinateSpanMake(0.5, 0.5);
     var region: MKCoordinateRegion!
     var currentLocation: CLLocationCoordinate2D!
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        self.getDataFromParent()
+    }
+    
+    func getDataFromParent() {
         WKInterfaceController.openParentApplication(["request":"map"]) { (replyInfo, error) -> Void in
             var latitudeReply: Double = (replyInfo["latitude"] as! NSString).doubleValue
             var longitudeReply: Double = (replyInfo["longitude"] as! NSString).doubleValue
             let location = CLLocationCoordinate2D(
                 latitude: latitudeReply,
                 longitude: longitudeReply)
-            println(latitudeReply)
-            println(longitudeReply)
             self.currentLocation = location
             self.setupMap(location)
         }
-        
     }
     
     func setupMap(location: CLLocationCoordinate2D) {
@@ -63,5 +64,9 @@ class MapController : WKInterfaceController {
         } else {
             self.map.removeAllAnnotations()
         }
+    }
+    
+    @IBAction func refreshMap() {
+        self.getDataFromParent()
     }
 }
