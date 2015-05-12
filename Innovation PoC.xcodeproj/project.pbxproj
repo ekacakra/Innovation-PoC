@@ -25,6 +25,8 @@
 		E04447D21AFA059A0004E07A /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04447D11AFA059A0004E07A /* MapController.swift */; };
 		E0BF195E1AFB03420081CEEB /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BF195D1AFB03420081CEEB /* AnimationController.swift */; };
 		E0DBD7801B006A2E00147A5B /* LocationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DBD77F1B006A2E00147A5B /* LocationTableCell.swift */; };
+		F073E5F21B01DD2700F74434 /* CreatePINController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F073E5F11B01DD2700F74434 /* CreatePINController.swift */; };
+		F0988B761B02156300AD3AAE /* ViewQRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0988B751B02156300AD3AAE /* ViewQRCodeController.swift */; };
 		F0A64EDE1B00B97C00EDABF4 /* PushDynamicNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = F0A64EDD1B00B97C00EDABF4 /* PushDynamicNotificationPayload.apns */; };
 		F0D1AD791AFB4E60001CBEDD /* CoinKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D1AD781AFB4E60001CBEDD /* CoinKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0D1AD7F1AFB4E60001CBEDD /* CoinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D1AD741AFB4E60001CBEDD /* CoinKit.framework */; };
@@ -156,6 +158,8 @@
 		E04447D11AFA059A0004E07A /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		E0BF195D1AFB03420081CEEB /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
 		E0DBD77F1B006A2E00147A5B /* LocationTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableCell.swift; sourceTree = "<group>"; };
+		F073E5F11B01DD2700F74434 /* CreatePINController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePINController.swift; sourceTree = "<group>"; };
+		F0988B751B02156300AD3AAE /* ViewQRCodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewQRCodeController.swift; sourceTree = "<group>"; };
 		F0A64EDD1B00B97C00EDABF4 /* PushDynamicNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PushDynamicNotificationPayload.apns; sourceTree = "<group>"; };
 		F0D1AD741AFB4E60001CBEDD /* CoinKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoinKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D1AD771AFB4E60001CBEDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -293,6 +297,8 @@
 				E0BF195D1AFB03420081CEEB /* AnimationController.swift */,
 				F0E42D781AFB755D00AF15BA /* ModalScreenController.swift */,
 				F0DE5A751AFCBF6800D464C9 /* ScreenTransitionController.swift */,
+				F073E5F11B01DD2700F74434 /* CreatePINController.swift */,
+				F0988B751B02156300AD3AAE /* ViewQRCodeController.swift */,
 			);
 			path = "Innovation PoC WatchKit Extension";
 			sourceTree = "<group>";
@@ -628,9 +634,11 @@
 			files = (
 				E04447B01AF9C85C0004E07A /* NotificationController.swift in Sources */,
 				E04447CE1AF9F6870004E07A /* TapTouchDragController.swift in Sources */,
+				F0988B761B02156300AD3AAE /* ViewQRCodeController.swift in Sources */,
 				E04447D01AFA00770004E07A /* ComponentCompositionController.swift in Sources */,
 				F0D1ADA21AFB4F77001CBEDD /* CoinRow.swift in Sources */,
 				E04447AE1AF9C85C0004E07A /* InterfaceController.swift in Sources */,
+				F073E5F21B01DD2700F74434 /* CreatePINController.swift in Sources */,
 				E0BF195E1AFB03420081CEEB /* AnimationController.swift in Sources */,
 				F0E42D791AFB755D00AF15BA /* ModalScreenController.swift in Sources */,
 				F0D1ADA11AFB4F77001CBEDD /* CoinGlanceInterfaceController.swift in Sources */,

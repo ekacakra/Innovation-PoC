@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
@@ -38,6 +38,11 @@
                             <fontDescription key="font" type="system" pointSize="15"/>
                             <connections>
                                 <segue destination="eA1-Ia-jdy" kind="push" id="eZ0-5x-17G"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Generate QR Code" id="gh5-tH-W7w">
+                            <connections>
+                                <segue destination="FK6-vT-SRq" kind="push" id="ifZ-sH-Fa3"/>
                             </connections>
                         </button>
                     </items>
@@ -261,7 +266,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-14" y="675"/>
+            <point key="canvasLocation" x="-259" y="686"/>
         </scene>
         <!--Animation Controller-->
         <scene sceneID="xcq-Ls-fYw">
@@ -303,7 +308,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-14" y="1010.5"/>
+            <point key="canvasLocation" x="-259" y="1010.5"/>
         </scene>
         <!--CoinDetailInterfaceController-->
         <scene sceneID="hqO-PC-raP">
@@ -351,7 +356,21 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="942"/>
+            <point key="canvasLocation" x="-5" y="952"/>
+        </scene>
+        <!--QR-Code-->
+        <scene sceneID="qiZ-Iq-reT">
+            <objects>
+                <controller identifier="ViewQRCodeController" title="QR-Code" id="CwO-tt-ceg" customClass="ViewQRCodeController" customModule="Innovation_PoC_WatchKit_Extension">
+                    <items>
+                        <imageView width="1" height="1" alignment="center" verticalAlignment="center" id="Ym3-Td-Vz5"/>
+                    </items>
+                    <connections>
+                        <outlet property="qrImageView" destination="Ym3-Td-Vz5" id="BNC-jl-rGb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="232" y="1038"/>
         </scene>
         <!--Coins-->
         <scene sceneID="MnM-IF-T9p">
@@ -385,7 +404,118 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="675"/>
+            <point key="canvasLocation" x="-5" y="691"/>
+        </scene>
+        <!--Input PIN-->
+        <scene sceneID="Eah-bo-IlK">
+            <objects>
+                <controller title="Input PIN" id="FK6-vT-SRq" customClass="CreatePINController" customModule="Innovation_PoC_WatchKit_Extension">
+                    <items>
+                        <group alignment="left" layout="vertical" id="haN-sB-HDC">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" spacing="5" id="GRL-7f-2RL">
+                                    <items>
+                                        <group width="1" alignment="left" spacing="5" id="Ggt-uw-V1n">
+                                            <items>
+                                                <button width="60" height="30" alignment="center" title="1" id="39h-GN-kZP">
+                                                    <variation key="device=watch42mm" width="70"/>
+                                                    <connections>
+                                                        <action selector="buttonAction1" destination="FK6-vT-SRq" id="A1a-4b-Gq5"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="60" height="30" alignment="center" title="2" id="4R4-Op-YwP">
+                                                    <variation key="device=watch42mm" width="70"/>
+                                                    <connections>
+                                                        <action selector="buttonAction2" destination="FK6-vT-SRq" id="8Dj-qO-W8R"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" spacing="5" id="GRy-LO-z8p">
+                                            <items>
+                                                <button width="60" height="30" alignment="center" title="3" id="aJa-QP-frn">
+                                                    <variation key="device=watch42mm" width="70"/>
+                                                    <connections>
+                                                        <action selector="buttonAction3" destination="FK6-vT-SRq" id="G1b-BB-cG0"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="60" height="30" alignment="center" title="4" id="mmj-SO-vSH">
+                                                    <variation key="device=watch42mm" width="70"/>
+                                                    <connections>
+                                                        <action selector="buttonAction4" destination="FK6-vT-SRq" id="beW-Ue-tZi"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" spacing="5" id="XZs-0Z-alx">
+                                            <items>
+                                                <button width="60" height="30" alignment="center" title="5" id="7pM-yh-HxT">
+                                                    <variation key="device=watch42mm" width="70"/>
+                                                    <connections>
+                                                        <action selector="buttonAction5" destination="FK6-vT-SRq" id="azr-Sr-mKv"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="60" height="30" alignment="center" title="6" id="Kid-js-E7g">
+                                                    <variation key="device=watch42mm" width="70"/>
+                                                    <connections>
+                                                        <action selector="buttonAction6" destination="FK6-vT-SRq" id="rAk-Ba-rHD"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" spacing="5" id="Ogc-fk-dzq">
+                                            <items>
+                                                <button width="60" height="30" alignment="center" title="7" id="7yK-6g-Be4">
+                                                    <variation key="device=watch42mm" width="70"/>
+                                                    <connections>
+                                                        <action selector="buttonAction7" destination="FK6-vT-SRq" id="ClY-KK-Hdf"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="60" height="30" alignment="center" title="8" id="vv2-3Z-ulc">
+                                                    <variation key="device=watch42mm" width="70"/>
+                                                    <connections>
+                                                        <action selector="buttonAction8" destination="FK6-vT-SRq" id="PUz-wt-Vy7"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" spacing="5" id="VGn-QI-fyG">
+                                            <items>
+                                                <button width="60" height="30" alignment="center" title="9" id="Qj0-z2-Rmd">
+                                                    <variation key="device=watch42mm" width="70"/>
+                                                    <connections>
+                                                        <action selector="buttonAction9" destination="FK6-vT-SRq" id="Asd-y8-jRU"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="60" height="30" alignment="center" title="0" id="iA5-xK-O2l">
+                                                    <variation key="device=watch42mm" width="70"/>
+                                                    <connections>
+                                                        <action selector="buttonAction0" destination="FK6-vT-SRq" id="J03-GL-7uS"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                    <edgeInsets key="margins" left="3" right="3" top="2" bottom="0.0"/>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="button0" destination="iA5-xK-O2l" id="7Rz-jx-dHg"/>
+                        <outlet property="button1" destination="39h-GN-kZP" id="Xdi-YO-jFd"/>
+                        <outlet property="button2" destination="4R4-Op-YwP" id="e40-Mh-0Ec"/>
+                        <outlet property="button3" destination="aJa-QP-frn" id="HnX-uR-pF7"/>
+                        <outlet property="button4" destination="mmj-SO-vSH" id="yeY-1L-Zzg"/>
+                        <outlet property="button5" destination="7pM-yh-HxT" id="Y78-Q6-Vix"/>
+                        <outlet property="button6" destination="Kid-js-E7g" id="h0V-5G-Y0N"/>
+                        <outlet property="button7" destination="7yK-6g-Be4" id="7NW-PZ-5zZ"/>
+                        <outlet property="button8" destination="vv2-3Z-ulc" id="XQR-9D-upp"/>
+                        <outlet property="button9" destination="Qj0-z2-Rmd" id="u9Y-qk-VOZ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="768.5"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">

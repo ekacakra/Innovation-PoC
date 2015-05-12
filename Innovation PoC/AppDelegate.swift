@@ -62,6 +62,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 reply(replyObject)
                 return
             }
+        } else if let userInfo = userInfo, request = userInfo["request"] as? NSDictionary {
+            if let data = request["generateQRCode"] as? String {
+                let URL:String = "https://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chl=\(data)"
+                let request = NSMutableURLRequest(URL: NSURL(string: URL)!)
+                request.HTTPMethod = "GET"
+                
+                var response = NSURLResponse?()
+                var error = NSError?()
+                
+                if let data = NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: &error) {
+                        reply(["qrData":data])
+                }
+                
+                return
+            }
         }
         
         // If something goes wrong, the default action is to send back an empty dictionary.
